@@ -32,7 +32,7 @@ class Presider extends React.Component {
         <div>Recieved ID: {this.props.a.id}</div>
         <div>Recieved NM: {this.props.a.nm}</div>
         <div>Recieved PP: {this.props.a.pp}</div>
-        <div>Recieved Yea: {this.props.a.tm}</div>
+        <div>Recieved Year: {this.props.a.tm}</div>
         <hr/>
       </div>
     );
