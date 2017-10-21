@@ -30,10 +30,10 @@ class Presider extends React.Component {
     return (
       <div>
         
-        <div>Recieved ID: {this.props.user.data.id}</div>
-        <div>Recieved NM: {this.props.user.data.nm}</div>
-        <div>Recieved PP: {this.props.user.data.pp}</div>
-        <div>Recieved Year: {this.props.user.data.tm}</div>
+        <div>Recieved ID: {this.props.user.id}</div>
+        <div>Recieved NM: {this.props.user.nm}</div>
+        <div>Recieved PP: {this.props.user.pp}</div>
+        <div>Recieved Year: {this.props.user.tm}</div>
       </div>
     );
   }
@@ -41,7 +41,7 @@ class Presider extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    user: state.user,
+    user: state.user.data,
     count: state.app
   }
 }

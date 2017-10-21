@@ -47,7 +47,7 @@ const userReducers = (state = initialState, action) => {
     case "GET_DATA_FULFILLED": 
     state = {
         ...state,
-        data: action.payload.data[0],
+        data: action.payload.data,
         pending: false,
         err: '',
         completed: true
