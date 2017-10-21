@@ -25,9 +25,10 @@ class Presider extends React.Component {
     this.props.setName(this.state.name);
     e.preventDefault();
   }
-
+  
   render() {
-    return (
+    if(this.props.a.id!=undefined){
+      return (
       <div >
         <div>Recieved ID: {this.props.a.id}</div>
         <div>Recieved NM: {this.props.a.nm}</div>
@@ -36,6 +37,14 @@ class Presider extends React.Component {
         <hr/>
       </div>
     );
+    }else{
+      return (
+      <div >
+        
+      </div>
+      );
+    }
+    
   }
 }
 
